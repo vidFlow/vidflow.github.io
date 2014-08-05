@@ -92,7 +92,7 @@ body {
     float: right;
     overflow: auto;
     width: 50%;
-    min-width: 350  px;
+    min-width: 350px;
     height: 250px;
     margin: 5% 0;
 
@@ -158,7 +158,8 @@ img {
 }
 
 .header-container img{
-    width: 10%;
+    width: 12%;
+    min-width: 75px;
 }
 
 .main-container {
