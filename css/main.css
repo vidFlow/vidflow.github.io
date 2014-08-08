@@ -55,6 +55,10 @@ textarea {
     padding: 0.2em 0;
 }
 
+div.invitation{ 
+    display: none;
+}
+
 
 /* ===== Initializr Styles ==================================================
    Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
@@ -122,7 +126,6 @@ body {
     bottom: 0px;
     left: 140px;
     z-index: 3;
-
 }
 
 #androidLaying{
@@ -150,41 +153,70 @@ body {
 }
 
 div.rightblock {
+    margin-top: 10%;
     width: 55%;
     float: right;
 }
 
+div.leftblock {
+    margin-top: 8%;
+    width: 55%;
+    float: left;
+}
+
 p.breadtext {
-    margin-top: 10%;
-    font-size: 2.5em;
+    margin: 10%;
+    font-size: 1.6em;
     line-height: 1.2em;
     letter-spacing: 2.3px;
     font-weight: 100;
     font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight';
-
 }
 
 div.iphoneLandscapeWrapper {
     float: left;
     width: 38%;
-    margin-top: -120px;
+    margin-top: -140px;
+    margin-bottom: 20px;
+}
+
+div.biniWrapper {
+    float: left;
+    
+    width: 40%;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+#skraaBini {
+    position: relative;
+    top: -20px;
+    left: -40px;
+    height: 440px;
 }
 
 img.iphoneLandscape {
     width: 100%;
 }
 
+img.iphoneStanding {
+    float: left;
+    height: 400px;
+}
+
 #firstIphone{
     position: relative;
-    bottom: -120px;
+    bottom: -160px;
 }
 
 #secondIphone{
     position: relative;
-    bottom: -60px;
+    left: 20px;
+    bottom: -80px;
 }
 
 #thirdIphone{
+    left: 40px;
     position: relative;
     bottom: 0px;
 }
@@ -356,6 +388,17 @@ nav a:hover {
     WIDE: CSS3 Effects
    ==================== */
 
+    div.invitation { 
+        position: absolute;
+        top: 40px;
+        left: 238px;
+        padding: 5px;
+        vertical-align: middle;
+        background-color: #95c6bc;
+
+        display: block;
+        color: white;
+    }
 
 
     .header-container,
