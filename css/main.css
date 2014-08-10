@@ -187,8 +187,6 @@ div.iphoneLandscapeWrapper {
     float: left;
     margin-top: 4   0px;
     width: 50%;
-
-
 }
 
 div.biniWrapper {
@@ -269,9 +267,6 @@ img {
 .light {
     background-color: rgb(229, 239, 238);
     background-color: rgba(229, 239, 238, 0.9);
-
-
-
 }
 
 .dark {
@@ -350,8 +345,6 @@ img {
     INTERMEDIATE: Menu
    ==================== */
 
-
-
     .main article h1 {
         font-size: 1.2em;
         letter-spacing: 1px;
@@ -364,15 +357,16 @@ img {
         font-weight: 300;
     }
 
+    .left > a {
+    font-size: 0.8em;
+}
+
     p.breadtext{
-        font-size: 0.8em;
+        font-size: 1.0em;
     }
 
     #pinkipad{
-
-        width: 200px;
-        top: 60px;
-        right: 0px;
+        display: none;
     }
 
     #bini{
@@ -380,8 +374,7 @@ img {
     }
 
     #skraaBini {
-        height: 200px;
-        left: 20px;
+        display: none;
     }
 
     .skraaBilder{
@@ -400,17 +393,25 @@ img {
         margin-top: 0px;
     }
 
-
-/* ========================
-    INTERMEDIATE: IE Fixes
-   ======================== */
-
-    nav ul li {
-        display: inline;
+    .alone{
+        width: 100% !important;
     }
 
-    .oldie nav a {
-        margin: 0 0.7%;
+
+
+
+    #appstorebadge {
+        position: absolute;
+        left: 10px;
+        bottom: 0px;
+        height: 40px;
+    }
+
+    #androidbadge {
+        height: 40px;
+        bottom: 0px;
+        position: absolute;
+        right: 23px;
     }
 }
 
@@ -428,7 +429,20 @@ img {
         margin-top: 40px;
     }
 
-   
+    #appstorebadge {
+        position: absolute;
+        left: 10px;
+        bottom: 0px;
+        height: 40px;
+    }
+
+    #androidbadge {
+        height: 40px;
+        bottom: 0px;
+        position: absolute;
+        right: 23px;
+    }
+
 
 
 /* ============
