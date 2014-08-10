@@ -55,7 +55,7 @@ textarea {
     padding: 0.2em 0;
 }
 
-div.invitation{ 
+div.menu{ 
     display: none;
 }
 
@@ -65,7 +65,7 @@ div.invitation{
    ========================================================================== */
 
 body {
-    font: 16px/26px Helvetica Neue, Helvetica, Arial;
+    font: 16px/26px 'Open Sans', Helvetica, Arial;
     color: #191520;
 }
 
@@ -73,7 +73,8 @@ body {
     width: 90%;
     margin: 0 5%;
     text-align: center;
-    overflow: auto;
+    overflow: hidden;
+    position: relative;
 
 }
 
@@ -82,7 +83,7 @@ body {
     position: relative;
     vertical-align: bottom;
     float: left;
-    overflow: auto;
+    overflow: hidden;
     width: 50%;
     min-width: 350px;
     height: 250px;
@@ -94,7 +95,7 @@ body {
     position: relative;
     vertical-align: bottom;
     float: right;
-    overflow: auto;
+    overflow: hidden;
     width: 50%;
     min-width: 350px;
     height: 250px;
@@ -153,31 +154,30 @@ body {
 }
 
 div.rightblock {
-    margin-top: 10%;
-    width: 55%;
+    width: 50%;
     float: right;
 }
 
 div.leftblock {
-    margin-top: 8%;
-    width: 55%;
+    width: 50%;
     float: left;
 }
 
 p.breadtext {
     margin: 10%;
-    font-size: 1.6em;
+    font-size: 1.4em;
     line-height: 1.2em;
     letter-spacing: 2.3px;
     font-weight: 100;
-    font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight';
+    font-family: 'Open Sans';
 }
 
 div.iphoneLandscapeWrapper {
     float: left;
-    width: 38%;
-    margin-top: -140px;
-    margin-bottom: 20px;
+    margin-top: 40px;
+    width: 50%;
+
+
 }
 
 div.biniWrapper {
@@ -192,7 +192,7 @@ div.biniWrapper {
     position: relative;
     top: -20px;
     left: -40px;
-    height: 440px;
+    height: 420px;
 }
 
 img.iphoneLandscape {
@@ -201,24 +201,41 @@ img.iphoneLandscape {
 
 img.iphoneStanding {
     float: left;
-    height: 400px;
+    height: 380px;
 }
 
 #firstIphone{
     position: relative;
-    bottom: -160px;
+    width: 450px;
+    bottom: 0;
 }
 
 #secondIphone{
-    position: relative;
-    left: 20px;
-    bottom: -80px;
+    position: absolute;
+    width: 300px;
+    top: 250px;
+    right: 0px;
 }
 
 #thirdIphone{
     left: 40px;
     position: relative;
     bottom: 0px;
+}
+
+
+#skraa1 {
+    position: absolute;
+    bottom: -175px;
+    left: -45px;
+    width: 560px;
+}
+
+#skraa2 {
+    position: absolute;
+    bottom: -175px;
+    width: 560px;
+    left: 450px;
 }
 
 img {
@@ -231,21 +248,26 @@ img {
 
 .header-container img{
     width: 12%;
-    min-width: px;
+    min-width: 110px;
 }
 
 .main-container {
     background-color: #e5efee;
+    overflow: hidden;
 }
+
 
 .main-container-dark {
     background-color: #272034;
     color: #e5efee;
+    overflow: hidden;
 }
 
-.header-container,
+.header-container {
+    background-color: #272034;
+}
 .footer-container {
-    background: #272034;
+    background: #e5efee;
 }
 
 .title {
@@ -316,19 +338,6 @@ nav a:hover {
    ========================================================================== */
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ==========================================================================
    Media Queries
    ========================================================================== */
@@ -364,8 +373,8 @@ nav a:hover {
     .main article h2 {
         font-size: 1.0em;
         letter-spacing: 1px;
-        font-weight: 100;
-        font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight';
+        font-weight: 300;
+        font-family: 'Open Sans';
     }
 
 
@@ -388,16 +397,22 @@ nav a:hover {
     WIDE: CSS3 Effects
    ==================== */
 
-    div.invitation { 
+   div.menu  { 
         position: absolute;
-        top: 40px;
-        left: 238px;
-        padding: 5px;
-        vertical-align: middle;
-        background-color: #95c6bc;
-
+        bottom: 15px;
+        right: 25px;
         display: block;
-        color: white;
+    }
+
+    div.menu > a > div { 
+        border-radius: 5px;
+        padding: 5px 7px;
+        margin-right: 10px;
+        background-color: #95c6bc;
+        display: block;
+        font-weight: 100;
+        color: #191520;
+        float: left;
     }
 
 
@@ -431,7 +446,7 @@ nav a:hover {
     }
 
     .main article h1 {
-        font-size: 2.0em;
+        font-size: 1.0em;
         letter-spacing: 1px;
         margin-bottom: -15px;
     }   
@@ -439,8 +454,8 @@ nav a:hover {
     .main article h2 {
         font-size: 1.6em;
         letter-spacing: 1px;
-        font-weight: 100;
-        font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight';
+        font-weight: 300;
+        font-family: 'Open Sans';
     }
 
 
@@ -480,26 +495,29 @@ nav a:hover {
         left: 10px;
     }
 
+    #appstorebadge {
+        position: absolute;
+        right: 10px;
+        bottom: 100px;
+        height: 40px;
+    }
 
-#appstorebadge {
-    position: absolute;
-    right: 10px;
-    bottom: 100px;
-    height: 40px;
-}
 
+    .main {
+        height: 420px;
+    }
 
    .main article h1 {
-        font-size: 2.6em;
+        font-size: 2.3em;
         letter-spacing: 1px;
         margin-bottom: -15px;
     }   
 
     .main article h2 {
-        font-size: 2.3em;
+        font-size: 2.0em;
         letter-spacing: 1px;
-        font-weight: 100;
-        font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight';
+        font-weight: 300;
+        font-family: 'Open Sans';
     }
     .wrapper {
         width: 1026px; /* 1140px - 10% for margins */
