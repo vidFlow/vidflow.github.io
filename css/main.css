@@ -48,6 +48,10 @@ textarea {
     resize: vertical;
 }
 
+a {
+    color: #95c6bc;
+}
+
 .browsehappy {
     margin: 0.2em 0;
     background: #ccc;
@@ -67,13 +71,14 @@ div.menu{
 body {
     font: 16px/26px 'Open Sans', Helvetica, Arial;
     color: #191520;
+    background: url("../img/background.jpg") no-repeat center center fixed;
+    background-size: cover;
 }
 
 .wrapper {
     width: 90%;
     margin: 0 5%;
     text-align: center;
-    overflow: hidden;
     position: relative;
 
 }
@@ -169,19 +174,18 @@ p.breadtext {
     line-height: 1.2em;
     letter-spacing: 2.3px;
     font-weight: 100;
-    font-family: 'Open Sans';
 }
 
 div.iphoneLandscapeWrapper {
     float: left;
-    margin-top: 40px;
+    margin-top: 4   0px;
     width: 50%;
 
 
 }
 
 div.biniWrapper {
-    float: left;
+    float: right;
     
     width: 40%;
     margin-top: 20px;
@@ -204,17 +208,17 @@ img.iphoneStanding {
     height: 380px;
 }
 
-#firstIphone{
+#pinkipad{
     position: relative;
-    width: 450px;
+    width: 460px;
     bottom: 0;
 }
 
-#secondIphone{
+#beyonce{
     position: absolute;
     width: 300px;
-    top: 250px;
-    right: 0px;
+    top: 300px;
+    right: -30px;
 }
 
 #thirdIphone{
@@ -226,14 +230,14 @@ img.iphoneStanding {
 
 #skraa1 {
     position: absolute;
-    bottom: -175px;
+    bottom: -185px;
     left: -45px;
     width: 560px;
 }
 
 #skraa2 {
     position: absolute;
-    bottom: -175px;
+    bottom: -185px;
     width: 560px;
     left: 450px;
 }
@@ -252,57 +256,35 @@ img {
 }
 
 .main-container {
-    background-color: #e5efee;
     overflow: hidden;
 }
 
+.light {
+    background-color: rgb(229, 239, 238);
+    background-color: rgba(229, 239, 238, 0.9);
 
-.main-container-dark {
+
+
+}
+
+.dark {
     background-color: #272034;
     color: #e5efee;
-    overflow: hidden;
 }
+
+.video {
+    height: 117px;
+    background-color: #272034;
+}
+
 
 .header-container {
     background-color: #272034;
 }
-.footer-container {
-    background: #e5efee;
-}
+
 
 .title {
     color: white;
-}
-
-/* ==============
-    MOBILE: Menu
-   ============== */
-
-nav ul {
-    margin: 0;
-    padding: 0;
-}
-
-nav a {
-    display: block;
-    margin-bottom: 10px;
-    padding: 15px 0;
-
-    text-align: center;
-    text-decoration: none;
-    font-weight: bold;
-
-    color: white;
-    background: #e44d26;
-}
-
-nav a:hover,
-nav a:visited {
-    color: white;
-}
-
-nav a:hover {
-    text-decoration: underline;
 }
 
 /* ==============
@@ -313,8 +295,21 @@ nav a:hover {
     padding: 30px 0;
 }
 
+.left {
+    text-align: left;
+    left: 0;
+    font-size: 14px;
+    position: absolute;
+    bottom: 15px;
+}
 
+.left > a {
+    margin-right: 10px;
+}
 
+.menu > a > img {
+    margin-right: 10px;
+}
 .main aside {
     color: white;
     padding: 0px 5% 10px;
@@ -322,7 +317,7 @@ nav a:hover {
 
 .footer-container footer {
     color: #9894c4;
-    padding: 20px 0;
+    padding: 15px 0;
 }
 
 /* ===============
@@ -348,21 +343,7 @@ nav a:hover {
     INTERMEDIATE: Menu
    ==================== */
 
-    nav a {
-        float: right;
-        width: 27%;
-        margin: 0 1.7%;
-        padding: 25px 2%;
-        margin-bottom: 0;
-    }
 
-    nav li:first-child a {
-        margin-left: 0;
-    }
-
-    nav li:last-child a {
-        margin-right: 0;
-    }
 
     .main article h1 {
         font-size: 1.2em;
@@ -374,7 +355,42 @@ nav a:hover {
         font-size: 1.0em;
         letter-spacing: 1px;
         font-weight: 300;
-        font-family: 'Open Sans';
+    }
+
+    p.breadtext{
+        font-size: 0.8em;
+    }
+
+    #pinkipad{
+
+        width: 200px;
+        top: 60px;
+        right: 0px;
+    }
+
+    #bini{
+        display: none;
+    }
+
+    #skraaBini {
+        height: 200px;
+        left: 20px;
+    }
+
+    .skraaBilder{
+        display: none;
+    }
+
+    #beyonce{
+        display: none;
+    }
+
+    .rightblock {
+        margin-top: 0px;
+    }
+
+    .leftblock {
+        margin-top: 0px;
     }
 
 
@@ -391,11 +407,19 @@ nav a:hover {
     }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and  (max-width: 1139px) {
 
 /* ====================
     WIDE: CSS3 Effects
    ==================== */
+
+   .rightblock {
+        margin-top: 30px;
+    }
+
+    .leftblock {
+        margin-top: 40px;
+    }
 
    div.menu  { 
         position: absolute;
@@ -416,13 +440,6 @@ nav a:hover {
     }
 
 
-    .header-container,
-    .main aside {
-        -webkit-box-shadow: 0 5px 10px #aaa;
-           -moz-box-shadow: 0 5px 10px #aaa;
-                box-shadow: 0 5px 10px #aaa;
-    }
-
 /* ============
     WIDE: Menu
    ============ */
@@ -431,10 +448,6 @@ nav a:hover {
         float: left;
     }
 
-    nav {
-        float: right;
-        width: 38%;
-    }
 
 /* ============
     WIDE: Main
@@ -446,7 +459,7 @@ nav a:hover {
     }
 
     .main article h1 {
-        font-size: 1.0em;
+        font-size: 1.9em;
         letter-spacing: 1px;
         margin-bottom: -15px;
     }   
@@ -455,15 +468,34 @@ nav a:hover {
         font-size: 1.6em;
         letter-spacing: 1px;
         font-weight: 300;
-        font-family: 'Open Sans';
     }
 
+    p.breadtext{
+        font-size: 1.2em;
+    }
 
+    #pinkipad{
+        position: absolute;
+        width: 300px;
+        top: 120px;
+        right: 0px;
+    }
 
+    #bini{
+        height: 300px;
+    }
 
-}
+    #skraaBini {
+        height: 320px;
+    }
 
-@media only screen and (max-width: 1139px) {
+    .skraaBilder{
+        display: none;
+    }
+
+    #beyonce{
+        display: none;
+    }
 
     #appstorebadge {
         position: absolute;
@@ -487,6 +519,13 @@ nav a:hover {
     Maximal Width
    =============== */
 
+    .rightblock {
+        margin-top: 60px;
+    }
+
+    .leftblock {
+        margin-top: 50px;
+    }
 
     #androidbadge {
         height: 40px;
@@ -517,7 +556,6 @@ nav a:hover {
         font-size: 2.0em;
         letter-spacing: 1px;
         font-weight: 300;
-        font-family: 'Open Sans';
     }
     .wrapper {
         width: 1026px; /* 1140px - 10% for margins */
