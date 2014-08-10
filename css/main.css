@@ -64,6 +64,13 @@ div.menu{
 }
 
 
+div.social  { 
+        position: absolute;
+        bottom: 15px;
+        right: 25px;
+        display: block;
+    }
+
 /* ===== Initializr Styles ==================================================
    Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
    ========================================================================== */
@@ -214,7 +221,7 @@ img.iphoneStanding {
     bottom: 0;
 }
 
-#beyonce{
+#adelen{
     position: absolute;
     width: 300px;
     top: 300px;
@@ -381,7 +388,7 @@ img {
         display: none;
     }
 
-    #beyonce{
+    #adelen{
         display: none;
     }
 
@@ -421,23 +428,7 @@ img {
         margin-top: 40px;
     }
 
-   div.menu  { 
-        position: absolute;
-        bottom: 15px;
-        right: 25px;
-        display: block;
-    }
-
-    div.menu > a > div { 
-        border-radius: 5px;
-        padding: 5px 7px;
-        margin-right: 10px;
-        background-color: #95c6bc;
-        display: block;
-        font-weight: 100;
-        color: #191520;
-        float: left;
-    }
+   
 
 
 /* ============
@@ -493,7 +484,7 @@ img {
         display: none;
     }
 
-    #beyonce{
+    #adelen{
         display: none;
     }
 
@@ -518,6 +509,24 @@ img {
 /* ===============
     Maximal Width
    =============== */
+
+   div.menu  { 
+        position: absolute;
+        bottom: 15px;
+        right: 25px;
+        display: block;
+    }
+
+    div.menu > a > div { 
+        border-radius: 5px;
+        padding: 5px 7px;
+        margin-right: 10px;
+        background-color: #95c6bc;
+        display: block;
+        font-weight: 100;
+        color: #191520;
+        float: left;
+    }
 
     .rightblock {
         margin-top: 60px;
