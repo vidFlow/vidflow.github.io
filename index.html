@@ -191,11 +191,14 @@
         <script type="text/javascript">
             $(document).ready(function() {
              $(".vimeo").fancybox({
+                helpers : {
+                    media: true
+                },
               aspectRatio : true,
-              autoHeight : true,
-              autoWidth : true,
               type: 'iframe',
-              fitToView : true
+              fitToView : true,
+              width: 800,
+              heigt: 450
 
              });
             });
