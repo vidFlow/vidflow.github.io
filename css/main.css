@@ -103,6 +103,23 @@ body {
     background-size: cover;
 }
 
+#videoplay{
+    width:150px;
+    float:left;
+    border:3px #e5efee solid;
+    margin-top:15px;
+    opacity: 0.8;
+}
+
+#videoplay:hover {
+    opacity: 1.0;
+}
+
+.video > div > article {
+    margin: 0 auto;
+    width: 320px;
+}
+
 .wrapper {
     width: 90%;
     margin: 0 5%;
@@ -268,8 +285,6 @@ img.iphoneStanding {
     left: 450px;
 }
 
-
-
 img {
     vertical-align: bottom;
 }
@@ -298,10 +313,11 @@ img {
 }
 
 .video {
-    height: 117px;
-    background-color: #272034;
+    height: 120px;
+    background-color: rgb(229, 239, 238);
+    background-color: rgba(39, 32, 52, 0.8);
+    color: #e5efee;
 }
-
 
 .header-container {
     background-color: #272034;
@@ -367,6 +383,7 @@ img {
 /* ====================
     INTERMEDIATE: Menu
    ==================== */
+
 
 .badgefooter {
     height: 23px;
@@ -564,8 +581,6 @@ img {
 /* ===============
     Maximal Width
    =============== */
-
-   
 
     .rightblock {
         margin-top: 60px;

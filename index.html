@@ -11,6 +11,11 @@
         <link rel="stylesheet" href="css/normalize.min.css">
         <link rel="stylesheet" href="css/main.css">
 
+        <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+        
+        <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" type="text/css" media="screen" />
+        <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+
         <!--[if lt IE 9]>
             <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
             <script>window.html5 || document.write('<script src="js/vendor/html5shiv.js"><\/script>')</script>
@@ -59,15 +64,18 @@
             </div> <!-- #main -->
         </div> <!-- #main-container -->
 
-        <div class="main-container dark">
-            <div class="video wrapper clearfix">
+        <div class="main-container video">
+            <div class="wrapper clearfix" style="text-align:center;">
+            
                 <article>
-        
-                    
+                    <a class="vimeo" rel="group" href="http://player.vimeo.com/video/103150642?title=0&amp;byline=0&amp;portrait=0&amp;color=97c9c0&amp;autoplay=true">
+                    <img src="img/videoplay.png" id="videoplay"/>
+                    </a>
+                    <h1 style="text-align:left;float:right;font-size:2.3em;line-height:0.9em;">THIS IS </br> vidFlow</h1>
                 </article>
+
             </div> <!-- #main -->
         </div> <!-- #main-container -->
-
 
         <div class="main-container light">
             <div class="main wrapper clearfix">
@@ -179,5 +187,16 @@
           ga('send', 'pageview');
 
         </script>
+
+        <script type="text/javascript">
+            $(document).ready(function() {
+             $(".vimeo").fancybox({
+              width: 800,
+              height: 450,
+              type: 'iframe',
+              fitToView : false
+             });
+            });
+            </script>
     </body>
 </html>
