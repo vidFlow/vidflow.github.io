@@ -59,9 +59,23 @@ a {
     padding: 0.2em 0;
 }
 
-div.menu{ 
-    display: none;
-}
+div.menu  { 
+        position: absolute;
+        bottom: 15px;
+        right: 25px;
+        display: block;
+    }
+
+    div.menu > a > div { 
+        border-radius: 5px;
+        padding: 5px 7px;
+        margin-right: 10px;
+        background-color: #95c6bc;
+        display: block;
+        font-weight: 100;
+        color: #191520;
+        float: left;
+    }
 
 
 div.social  { 
@@ -345,6 +359,18 @@ img {
     INTERMEDIATE: Menu
    ==================== */
 
+   div.menu > a > div { 
+        border-radius: 5px;
+        padding: 5px 7px;
+        margin-right: 10px;
+        background-color: #95c6bc;
+        display: block;
+        font-weight: 100;
+        color: #191520;
+        float: left;
+        font-size: 0.7em;
+    }
+
     .main article h1 {
         font-size: 1.2em;
         letter-spacing: 1px;
@@ -524,23 +550,7 @@ img {
     Maximal Width
    =============== */
 
-   div.menu  { 
-        position: absolute;
-        bottom: 15px;
-        right: 25px;
-        display: block;
-    }
-
-    div.menu > a > div { 
-        border-radius: 5px;
-        padding: 5px 7px;
-        margin-right: 10px;
-        background-color: #95c6bc;
-        display: block;
-        font-weight: 100;
-        color: #191520;
-        float: left;
-    }
+   
 
     .rightblock {
         margin-top: 60px;
