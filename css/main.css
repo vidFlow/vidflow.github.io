@@ -315,7 +315,7 @@ img {
 .video {
     height: 120px;
     background-color: rgb(229, 239, 238);
-    background-color: rgba(39, 32, 52, 0.8);
+    background-color: rgba(39, 32, 52, 1.0);
     color: #e5efee;
 }
 
