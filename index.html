@@ -191,10 +191,12 @@
         <script type="text/javascript">
             $(document).ready(function() {
              $(".vimeo").fancybox({
-              width: 800,
-              height: 450,
+              aspectRatio : true,
+              autoHeight : true,
+              autoWidth : true,
               type: 'iframe',
-              fitToView : false
+              fitToView : true
+
              });
             });
             </script>
