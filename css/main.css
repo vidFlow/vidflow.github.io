@@ -77,13 +77,20 @@ div.menu  {
         float: left;
     }
 
+.badgefooter {
+    height: 30px;
+}
 
 div.social  { 
         position: absolute;
         bottom: 15px;
-        right: 25px;
+        right: 15px;
         display: block;
     }
+
+div.social > a {
+    margin-left: 15px;
+}
 
 /* ===== Initializr Styles ==================================================
    Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
@@ -261,6 +268,8 @@ img.iphoneStanding {
     left: 450px;
 }
 
+
+
 img {
     vertical-align: bottom;
 }
@@ -311,15 +320,15 @@ img {
     padding: 30px 0;
 }
 
-.left {
+.footerleft {
     text-align: left;
-    left: 0;
+    left: 15px;
     font-size: 14px;
     position: absolute;
     bottom: 15px;
 }
 
-.left > a {
+.footerleft > a {
     margin-right: 10px;
 }
 
@@ -358,6 +367,10 @@ img {
 /* ====================
     INTERMEDIATE: Menu
    ==================== */
+
+.badgefooter {
+    height: 23px;
+}
 
    div.menu > a > div { 
         border-radius: 5px;
@@ -424,7 +437,9 @@ img {
     }
 
 
-
+.footerleft {
+    font-size: 0.8em;
+}
 
     #appstorebadge {
         position: absolute;
