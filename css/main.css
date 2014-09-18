@@ -59,14 +59,14 @@ a {
     padding: 0.2em 0;
 }
 
-div.menu  { 
+div.menu  {
         position: absolute;
         bottom: 15px;
         right: 25px;
-        display: block;
+        display: none;
     }
 
-    div.menu > a > div { 
+    div.menu > a > div {
         border-radius: 5px;
         padding: 5px 7px;
         margin-right: 10px;
@@ -81,7 +81,8 @@ div.menu  {
     height: 30px;
 }
 
-div.social  { 
+
+div.social  {
         position: absolute;
         bottom: 15px;
         right: 15px;
@@ -229,7 +230,7 @@ div.iphoneLandscapeWrapper {
 
 div.biniWrapper {
     float: right;
-    
+
     width: 40%;
     margin-top: 20px;
     margin-bottom: 0px;
@@ -389,7 +390,7 @@ img {
     height: 23px;
 }
 
-   div.menu > a > div { 
+   div.menu > a > div {
         border-radius: 5px;
         padding: 5px 7px;
         margin-right: 10px;
@@ -405,7 +406,7 @@ img {
         font-size: 1.2em;
         letter-spacing: 1px;
         margin-bottom: -15px;
-    }   
+    }
 
     .main article h2 {
         font-size: 1.0em;
@@ -479,6 +480,11 @@ img {
     WIDE: CSS3 Effects
    ==================== */
 
+   div.menu  {
+
+           display: block;
+       }
+
    .rightblock {
         margin-top: 30px;
     }
@@ -525,7 +531,7 @@ img {
         font-size: 1.9em;
         letter-spacing: 1px;
         margin-bottom: -15px;
-    }   
+    }
 
     .main article h2 {
         font-size: 1.6em;
@@ -582,6 +588,11 @@ img {
     Maximal Width
    =============== */
 
+   div.menu  {
+
+           display: block;
+       }
+
     .rightblock {
         margin-top: 60px;
     }
@@ -613,7 +624,7 @@ img {
         font-size: 2.3em;
         letter-spacing: 1px;
         margin-bottom: -15px;
-    }   
+    }
 
     .main article h2 {
         font-size: 2.0em;
